@@ -9,7 +9,7 @@ console.log(2 != 1);    // true
 console.log("2" > 1);   // true
 console.log("02" > 1);  // true
 
-// It compares NULL to number but NULL contaimes different values ate different time, so it is recomended to use
+// It compares NULL to number but NULL contaimes different values ate different time, so it is not recomended to use
 console.log(null > 0);  // true
 console.log(null >= 0); //false
 console.log(null == 0); // true
