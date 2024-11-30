@@ -40,6 +40,7 @@ console.log(true);  // true
 console.log(+true); // 1
 // console.log(true+); // ERROR
 console.log(+"");   // 0
+// All above should not be used in real time code
 
 let num1,num2,num3
 
