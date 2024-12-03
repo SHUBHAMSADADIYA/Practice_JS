@@ -77,3 +77,35 @@ console.log(Object.entries(tinderUser));   // [ [ 'id', '001' ], [ 'name', 'John
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));   // true
 console.log(tinderUser.hasOwnProperty('isLogged'));     // false
 // It Checks the given property is exist in object or not
+
+const course = {
+    coursename : "JavaScipt",
+    price : 999,
+    courseInstructor : "Shubham"
+}
+
+const {courseInstructor} = course
+const {courseInstructor: instructor} = course
+// You can also change name of your key  
+
+console.log(courseInstructor);  // Shubham
+console.log(instructor);        // Shubham
+
+// ======>  APIs  <======
+// In APIs there are keys also written as string 
+
+// Types
+
+// 1. Object type
+// {
+//     "name" : "Shubham",
+//     "course" : "JS",
+//     "price" : "Free"
+// }
+
+// 2. Array type or JSON
+// [
+//     {},    
+//     {},    
+//     {},    
+// ]
