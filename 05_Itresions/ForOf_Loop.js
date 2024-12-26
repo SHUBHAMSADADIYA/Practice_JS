@@ -17,7 +17,6 @@ for (const greet of greeting) {
 }
 
 // Maps // It is known for his 'entry of Unique value only','Display in same order'
-
 const map = new Map()
 map.set('IND',"INDIA")
 map.set('USA',"United States of America")
@@ -28,13 +27,3 @@ map.set('FRC',"France")
 for (const [key, value] of map) {
     console.log(key, ' ==> ', value);
 }
-
-// const myObject = {
-//     'game1' : 'GTA V',
-//     'game2' : 'Forza Horizen',
-//     'game3' : 'Mortal Kombat'
-// }
-
-// for (const [key ,value] of myObject) {
-//     console.log(key, ' ==> ', value);
-// }
