@@ -12,5 +12,16 @@
 <script>
     const div = document.createElement('div')
     console.log(div)
+    div.className = "main"
+    div.id = Math.round(Math.random() * 100 )
+    div.setAttribute("Title", "Generated Title")
+    div.style.backgroundColor = "#827212"
+    div.style.padding = "12px"
+    // div.innerHTML = "Code With Shubham"
+    const addText = document.createTextNode("Code With Shubham")
+    div.appendChild(addText)
+    div.style.fontFamily = "Lucida Console"
+    document.body.appendChild(div)
+
 </script>
 </html>

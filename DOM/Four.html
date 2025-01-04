@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHUBHAM | DOM</title>
+</head>
+<body style="background-color: #212121; color: azure;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<Script>
+    function addLanguage(LangName)
+    {
+        const li = document.createElement('li')
+        li.innerHTML = `${LangName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("JAVA")
+    
+    function addOptiLanguage(LangName)
+    {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(LangName))  
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("TypeScript")
+    addOptiLanguage("Ruby")
+
+
+    // Editing the li = Part 1
+
+    const secondLang = document.querySelector("li:nth-child(4)")
+    // secondLang.innerHTML = "C++"
+    const newLi = document.createElement('li')
+    newLi.textContent = "C++" 
+    secondLang.replaceWith(newLi)
+
+    // Editing the li  = Part 2 
+
+    const fifthLang = document.querySelector("li:nth-child(5)")
+    fifthLang.innerHTML = '<li> TypeScipt </li>'
+
+    // Remove hte li
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+    
+</Script>
+</html>
