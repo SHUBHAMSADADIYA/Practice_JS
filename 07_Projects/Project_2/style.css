@@ -1,0 +1,35 @@
+body{
+    background-color: #212121;
+    font-family: cursive;
+    color: bisque;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    border: 3px solid grey;
+    text-align: center;
+    border-radius: 10px;
+}
+
+button{
+    font-family: cursive;
+    color: bisque;
+    background-color: #5a5a47b6;
+    border-radius: 5px;
+    margin: 5px 0 20px 0;
+}
+
+#results{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-size: 50px;
+}
+
+.weight-guide span{
+    text-decoration: underline;
+}

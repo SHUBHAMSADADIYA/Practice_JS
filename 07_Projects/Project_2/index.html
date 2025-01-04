@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
+    <div class="container">
+        
+        <form>
+            <h1>BMI Calculator</h1>
+            <div class="info">
+                <p>
+                    <label>Height in CM</label> <br>
+                    <input type="text" name="height" placeholder="Height">
+                </p>
+                <p>
+                    <label>Weight in KG</label> <br>
+                    <input type="text" name="weight" placeholder="Weight">
+                </p>
 
-    <h1>BMI Calculator</h1>
+                <button>Calculate</button>
+            </div>
 
-    <form>
-        <p><label>Height in CM</label></p>
-    </form>
+            <div id="results"></div>
+            <div id="weight-guide">
+                <p>Under Weight : <span>Less than 18.5</span></p>
+                <p>Normal Weight : <span> 18.6 to 24.9</span></p>
+                <p>Under Weight : <span> Greater than 25</span></p>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
