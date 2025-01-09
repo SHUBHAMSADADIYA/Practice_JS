@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three</title>
+</head>
+
+<body>
+    <h1>Shubham Sadadiya</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const sayDate = function (str) {
+        console.log(str);
+    }
+
+    let intervalId;
+    
+    const start = document.getElementById('start')
+    start.addEventListener('click', function () {
+        intervalId = setInterval(sayDate, 1000, "HELLO!!!")
+    })
+
+    const stop = document.getElementById('stop')
+    stop.addEventListener('click', function () {
+        clearInterval(intervalId)
+    })
+</script>
+
+</html>

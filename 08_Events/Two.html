@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two</title>
+</head>
+
+<body>
+    <h1>Shubham Sadadiya</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const time = function () {
+        console.log("Shubham");
+    }
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "Student Of The Year !!!"
+    }
+
+    // It Runs function after Given Time
+    // And It Runs Function Only One Time
+    setTimeout(time, 2000)
+    const changeMe = setTimeout(changeText, 3000)
+
+    const stop = document.getElementById('stop')
+    stop.addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+
+</script>
+
+</html>
