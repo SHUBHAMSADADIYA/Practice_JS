@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Of Follower</title>
+</head>
+
+<body>
+
+</body>
+<div id="card"></div>
+<h2 id="h2"></h2>
+<script>
+    // const card = document.createElement('div');
+    const card = document.getElementById('card');
+    card.style.height = '180px';
+    card.style.width = '180px';
+    // card.style.backgroundColor = 'black';
+    card.style.backgroundImage = "url('https://tse2.mm.bing.net/th?id=OIP.NNSezxyrrMqGiJGTqd2vOQAAAA&pid=Api&P=0&h=180')";
+    card.style.border = '5px solid grey';
+
+    // const h2 = document.createElement('h2');
+    const h2 = document.getElementById('h2');
+    // h2.textContent = 'Followers : ';
+
+    const requestURL = 'https://api.github.com/users/hiteshchoudhary';
+
+    let xml = new XMLHttpRequest();
+    xml.open('GET', requestURL);
+
+    xml.onreadystatechange = function () {
+        console.log(xml.readyState);
+        if(xml.readyState === 4){
+            const data = JSON.parse(this.responseText);
+            h2.textContent = `Followers : ${data.followers}`;
+        }
+    }
+    xml.send();
+
+
+
+</script>
+
+</html>
